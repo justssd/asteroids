@@ -35,5 +35,5 @@ class Player(CircleShape):
             self.rotate(dt)
 
     def draw(self, screen):
-        pygame.draw.circle(screen, RED, self.position, PLAYER_RADIUS, width=2)
+        pygame.draw.circle(screen, RED, self.position, self.radius, width=2)
         pygame.draw.polygon(screen, WHITE, self.triangle(), width=2)
